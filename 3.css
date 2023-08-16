@@ -1,0 +1,29 @@
+body {
+  font-family:Arial,sans-serif;
+  background-color:#f5f5f5;
+  }
+*{
+  margin:0;
+  padding:0;
+}
+.wz {
+  max-width:800px;
+  margin:20px auto;
+  padding:20px;
+  background-color:#fff;
+  border-radius:5px;
+  box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+  }
+.wz h1{
+  margin-top:0;
+  }
+.wz p {
+  line-height:1.6;
+  }
+.header {
+  height:10vw;
+  text-align:center;
+  color:white;
+  background-color:#0099cc;
+  padding:20px 10px;
+  }

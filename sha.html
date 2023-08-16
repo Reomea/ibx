@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>WebCat</title>
+</head>
+<body>
+<style>
+*{
+  margin:0;
+  padding:0;
+  }
+.back {
+  background-color:skyblue;
+  color:white;
+  padding:60px 60px;
+  text-shadow:1px 2px #009cff;
+  text-align:center;
+}
+.dhl {
+  background-color:skyblue;
+  margin-top:50px;
+  justify-content:space-around;
+  color:white;
+  padding:5px 5px;
+  display:flex;
+  }
+#tx {
+  width:100px;
+  border-radius:50px;
+  border:1px solid black;
+  margin-top:5px;
+  box-shadow:0 0 11px rgba(0,0,0,0.2);
+  height:100px;
+  }
+.wz {
+  width:90%;
+  border:1px solid lightgrey;
+  padding:10px 10px;
+  border-radius:15px;
+  margin:15px auto;
+  }
+</style>
+<div class="back">
+<h1>X-blog</h1>
+</div>
+<center>
+<img id="tx" src="a.png"/>
+<h3>小鲨-鲨bee</h3>
+</center>
+<div class="dhl">
+<div onclick="retu()">首页</div>
+<div onclick="goto()">文章</div>
+</div>
+<div class="wz">
+<div class="head">
+<h3>我的第一篇文章</h3>
+<h3>发布时间:2023-8-13 16:00</h3>
+</div>
+<hr>
+<div class="body">
+这是一篇用来测试文章，用来测试文章页面是否正常用:)<br>Hello World
+</div>
+</div>
+<script>
+   function retu(){
+	var r=confirm("确认回到首页？");
+	if (r==true){
+		window.location.href="index.html";
+	}
+	else{
+		return false;
+   }
+ }
+function goto(){
+window.location.href="wz1.html";
+}
+</script>
+</body>
+</html>

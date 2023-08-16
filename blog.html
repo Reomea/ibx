@@ -1,0 +1,169 @@
+<html>
+ <head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <title>X-blog</title> 
+  <script src="index.js"></script> 
+  <link rel="stylesheet" type="text/css" href="CSS/style.css"> 
+  <style>
+ hr {
+   border-bottom:1px solid black;
+   }
+ *{
+   margin:0;
+   padding:0;
+   border:0;
+   }
+ .box {
+   display:flex;
+   justify-content:space-around;
+   margin:15px auto;
+   border:1px solid black;
+   }
+ .box #box {
+   padding:10px 10px;
+   }
+ .left {
+   border-left:1px solid black;
+   }
+.dhl {
+  background-color:skyblue;
+  color:white;
+  height:35px;
+  display:flex;
+  justify-content:space-around;
+  }
+.dhl div {
+  background-color:#004aff;
+  padding:5px 5px;
+  }
+#inga img {
+  width:100px;
+  border-radius:50px;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+  margin-top:15px;
+  height:100px;
+  }
+.box a {
+  text-decoration: none;
+  color:black;
+  }
+.text {
+  text-align:center;
+  font-weight:90;
+  }
+.txt {
+  text-align:center;
+  }
+#yua {
+   text-align:center;
+  }
+#box {
+  border-bottom:1px solid black;
+  }
+#ae{
+  display:flex;
+  border-bottom:1px solid black;
+  }
+.tit {
+  background-color:skyblue;
+  text-align:center;
+  color:white;
+  margin-top:15px;
+  }
+#yes {
+  width:200px;
+  height:20px;
+  margin-top:5px;
+  border:1px solid black;
+  }
+#num {
+  border-bottom:1px solid black;
+  }
+#num2 {
+  border-bottom:1px solid black;
+  }
+ </style> 
+  <script src="js/jq.js"></script> 
+ </head> 
+ <body id="v1"> 
+  <div id="v2" class="box"> 
+   <div id="bx">
+     C/C++语言 
+   </div> 
+   <div id="v3" class="left"></div> 
+   <div id="bx">
+     Java语言 
+   </div> 
+   <div id="v4" class="left"></div> 
+   <div id="bx">
+     Python语言 
+   </div> 
+  </div> 
+  <div id="v5" class="dhl"> 
+   <div id="v6" onclick="gotoindex()">
+     首页 
+   </div> 
+   <div id="v7" onclick="gotop()">
+     文章(知乎) 
+   </div> 
+  </div> 
+  <div id="inga"> 
+   <center id="v8"> 
+    <img id="v9" src="sha.jpg"> 
+   </center> 
+   <div id="v10" class="text" data-id="tx">
+     『XS』 
+   </div> 
+   <div id="v11" class="txt">
+     ==== 
+   </div> 
+  </div> 
+  <ul id="yua"> 
+   <a id="v12" href="https://v.kuaishou.com/35DBZV"><li id="v13">小鲨——MC</li></a> 
+   <a id="v14" href="https://v.kuaishou.com/mraDF"><li id="v15">小鲨——编程频道</li></a> 
+  </ul> 
+  <p id="ua"><i id="v17">Hello World —— 你好世界</i></p> 
+  <div id="box"></div> 
+  <div style="color:white;background-color:#00d4ff;text-align:center;">友链</div>
+ <a href="http://www.baidu.com/">百度</a>
+ <br>
+ <a href="http://runoob.com">菜鸟教程</a>
+ <br>
+ <a href="http://kaifa.baidu.com">百度开发</a>
+ <hr>
+  <div id="v18" class="tit">
+    工具栏 
+  </div> 
+  
+  <p id="v19">这是一段文字可以在下面选择你喜欢的颜色进行更改这段文字</p> 
+  <h3 id="v20" class="tc">这是一段彩色的文字</h3> 
+  <input id="col" type="color"> 
+  <div id="ae"> 
+   <div id="v21">
+     色值: 
+    <div id="v22" class="cl"></div> 
+   </div> 
+  </div> 
+  <button id="yes" onclick="getcolor()">确定</button> 
+  <hr id="v24"> 
+  <p class="col2">这是一段彩色的文字</p>
+  <input id="clo" style="border-bottom:1px solid black;text-align:center;width:250px;" placeholder="请输入一种二进制颜色:" type="text"/>
+  <button style="width:100px;height:20px;"onclick="dls()">确定</button>
+  <script>
+  function getcolor(){
+  let a = document.getElementById("col").value
+  let h3 = document.querySelector(".tc")
+  let doc = document.querySelector(".cl").innerText = a
+  h3.style.color = a
+  }
+function dls(){
+let aw = document.querySelector(".col2")
+let color = document.getElementById("clo").value
+aw.style.color = color
+}
+ function gotoindex(){window.location.href="index.html";}
+ function gotop(){window.location.href="https://www.zhihu.com/people/82-24-81-5";}
+  </script>
+ </body>
+</html>
